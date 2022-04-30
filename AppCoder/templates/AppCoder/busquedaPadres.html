@@ -1,0 +1,17 @@
+{% extends "AppCoder/padre.html" %}
+
+{% load static %}
+
+
+{% block contenidoModificable %}
+
+<h1>Acá podes ver toodos los Padres que me agregaste. </h1>
+<br>
+    <form action="/AppCoder/buscarPadres/" method="GET">
+        <label> Ingresá el nombre del Padre que queres buscar.</label>
+        <input type="text" name="nombre" id="nombre">
+
+        <input type="submit" value="Buscar">
+
+    </form>
+{% endblock %}

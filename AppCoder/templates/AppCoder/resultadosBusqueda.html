@@ -1,0 +1,25 @@
+{% extends "AppCoder/padre.html" %}
+
+{% load static %}
+
+{% block contenidoModificable %}
+
+    <p>Mis Abuel@s con ese nombre:</p>
+
+    {% if abuelos %} 
+
+    <ul>
+    {% for x in abuelos %}
+
+        <li>Nombre: {{x.nombre}}</li>
+        <li>Nació en: {{x.paisDeNac}}</li>
+        <li>En el año: {{x.anioDeNac}}</li>
+
+
+    {% endfor %}
+
+    </ul>
+
+    {% endif %}    
+
+{% endblock %}
